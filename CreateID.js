@@ -13,3 +13,4 @@ function createId(length) {
 }
 
 // Called with length, E.G. let id = createId(5) will create Id with 5 characters.
+// For more complex operations, I recommend 'crypto' nodeJs module.
