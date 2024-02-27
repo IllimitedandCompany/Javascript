@@ -15,7 +15,7 @@ app.get('/LinkToAccess', function(){ // Remember, this goes next to the url of s
 })
 
 // Asynchronous Route (Awaits processing of functions to load results)
-app.get('/LinkToAccess', async =>(){ // Remember, this goes next to the url of server, that being localhost:port for local or domain/endpoint of app/server.
+app.get('/LinkToAccess', async() =>{ // Remember, this goes next to the url of server, that being localhost:port for local or domain/endpoint of app/server.
     // Would be used with "await " : E.G. let result = await functionName() 
 })
 
@@ -26,7 +26,7 @@ app.post('/endpoint', function(){
 })
 
 // Asynchronous
-app.post('/endpoint/:example/:example1?', async =>(){ // Endpoint Parameters: ..Are sent on the link(endpoint used) as: .../:parameter1/:parameter2/... for a optional parameter: .../:parameter1?
+app.post('/endpoint/:example/:example1?', async() =>{ // Endpoint Parameters: ..Are sent on the link(endpoint used) as: .../:parameter1/:parameter2/... for a optional parameter: .../:parameter1?
     // Call parameters using: req.params.parameterName; Example here: let example = req.params.example;
 
 })
